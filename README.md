@@ -34,19 +34,20 @@ If you find this project useful to you, please cite [our work](https://arxiv.org
 * python=3.6 (Anaconda)
 * pytorch=1.1.0
 * torchvision=0.3.0
-
+* config (pip install config)
   
 ## Usage
 Download pretrained quantized CIFAR-10 ResNet-20 model and ImageNet ResNet-18 model from:
-* [Google Drive](https://drive.google.com/drive/folders/15r5d8B9HPM0dGZQrSg6j2UT5fRy25DSM?usp=sharing )
+* [Google Drive](https://drive.google.com/drive/folders/15r5d8B9HPM0dGZQrSg6j2UT5fRy25DSM?usp=sharing ) (email me directly if link is not available)
+
 To perform run-time checking using the pretrained model, please use the following command in terminal. For Imagenet, remember to revise the bash code with correct dataset path.
   
-CIFAR-10:
+Perform RADAR checking on CIFAR-10 ResNet-20 moel:
 ```bash
 bash check_CIFAR10.sh
 ```
   
-ImageNet:
+Perform RADAR checking on ImageNet ResNet-18 moel:
 ```bash
 bash check_ImageNet.sh
 ```
