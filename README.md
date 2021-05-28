@@ -81,9 +81,12 @@ The entire network is quantized to 8-bit for ResNet-20 on CIFAR-10.
   
 The Accuracy results by sweeping different grain size will be similar to what we presented in **Table III** of the paper.
 
+![Table III](figs/table3.PNG)
+
 ### ResNet-18 on ImageNet:
 
 The entire network is quantized to 8-bit for ResNet-18 on ImageNet.
   
 The Accuracy results by sweeping different grain size will be similar to what we presented in **Figure 5** of the paper.
-  
+
+![Figure 5](figs/figure5.PNG)
