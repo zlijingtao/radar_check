@@ -1,0 +1,208 @@
+Evaluate saved Model : ./quan_resnet20_cifar10.pth.tar
+{'arch': 'quan_resnet20', 'attack_sample_size': 128, 'batch_size': 128, 'check_bit': 2, 'check_factor': 4.0, 'check_gsize': 8, 'data_path': './dataset/', 'dataset': 'cifar10', 'enable_bfa': True, 'enable_check': True, 'evaluate': False, 'gpu_id': 0, 'input_M2D': 0.0, 'input_grain_size': [1, 1], 'input_num_bits': 1, 'k_top': 40, 'layer_id': 0, 'limit_row': 10, 'manualSeed': 5000, 'massive': 10, 'n_iter': 2, 'ngpu': 1, 'output_M2D': 0.0, 'output_grain_size': [1, 1], 'output_num_bits': 1, 'res_M2D': 0.0, 'res_grain_size': [1, 1], 'res_num_bits': 1, 'reset_weight': True, 'resume': './quan_resnet20_cifar10.pth.tar', 'update_mask_flag': False, 'use_cuda': True, 'workers': 4}
+python version : 3.6.9 |Anaconda, Inc.| (default, Jul 30 2019, 19:07:31)  [GCC 7.3.0]
+torch  version : 1.1.0
+cudnn  version : 7600
+=> creating model 'quan_resnet20'
+=> loading checkpoint './quan_resnet20_cifar10.pth.tar'
+=> Generating Codebook for checking group size '8'
+=> creating model 'quan_resnet20_c'
+=> loading checkpoint './quan_resnet20_cifar10.pth.tar'
+=> loaded checkpoint for the checker model './quan_resnet20_cifar10.pth.tar'
+=> Seed is 25
+  **Test** Prec@1 90.150 Prec@5 99.610 Loss 0.4954 Error@1 9.850
+=> Original Accuracy is 90.15%
+k_top is set to 40
+Attack sample size is 128
+**********************************
+Iteration: [001/002]   Attack Time 0.266 (0.266)  [2021-05-28 00:33:33]
+loss before attack: 0.0120
+loss after attack: 0.0508
+bit flips: 1
+iteration Time 0.000 (0.000)
+**********************************
+Iteration: [002/002]   Attack Time 0.219 (0.242)  [2021-05-28 00:33:33]
+loss before attack: 0.0508
+loss after attack: 0.4030
+bit flips: 2
+iteration Time 0.000 (0.000)
+End of searching, dump all the bits to the target system and perform the attack
+  **Test** Prec@1 84.820 Prec@5 99.090 Loss 0.7816 Error@1 15.180
+  **Test** Prec@1 87.610 Prec@5 99.340 Loss 0.6376 Error@1 12.390
+Attacking which layer: 01
+Model Integrity Check Failed!, we found 1 bit-flips
+k_top is set to 40
+Attack sample size is 128
+**********************************
+Iteration: [001/002]   Attack Time 0.207 (0.207)  [2021-05-28 00:33:42]
+loss before attack: 0.0094
+loss after attack: 0.9912
+bit flips: 3
+iteration Time 0.000 (0.000)
+**********************************
+Iteration: [002/002]   Attack Time 0.210 (0.208)  [2021-05-28 00:33:42]
+loss before attack: 0.9912
+loss after attack: 3.9515
+bit flips: 4
+iteration Time 0.000 (0.000)
+End of searching, dump all the bits to the target system and perform the attack
+  **Test** Prec@1 67.770 Prec@5 94.940 Loss 2.9936 Error@1 32.230
+  **Test** Prec@1 87.660 Prec@5 99.500 Loss 0.6013 Error@1 12.340
+Attacking which layer: 01
+Model Integrity Check Failed!, we found 1 bit-flips
+k_top is set to 40
+Attack sample size is 128
+**********************************
+Iteration: [001/002]   Attack Time 0.204 (0.204)  [2021-05-28 00:33:50]
+loss before attack: 0.0170
+loss after attack: 0.3014
+bit flips: 5
+iteration Time 0.000 (0.000)
+**********************************
+Iteration: [002/002]   Attack Time 0.194 (0.199)  [2021-05-28 00:33:50]
+loss before attack: 0.3014
+loss after attack: 1.0342
+bit flips: 6
+iteration Time 0.000 (0.000)
+End of searching, dump all the bits to the target system and perform the attack
+  **Test** Prec@1 83.120 Prec@5 98.580 Loss 0.9450 Error@1 16.880
+  **Test** Prec@1 88.460 Prec@5 99.390 Loss 0.5677 Error@1 11.540
+Attacking which layer: 01
+Model Integrity Check Failed!, we found 1 bit-flips
+k_top is set to 40
+Attack sample size is 128
+**********************************
+Iteration: [001/002]   Attack Time 0.220 (0.220)  [2021-05-28 00:33:59]
+loss before attack: 0.0191
+loss after attack: 0.1581
+bit flips: 7
+iteration Time 0.000 (0.000)
+**********************************
+Iteration: [002/002]   Attack Time 0.212 (0.216)  [2021-05-28 00:33:59]
+loss before attack: 0.1581
+loss after attack: 0.7576
+bit flips: 8
+iteration Time 0.000 (0.000)
+End of searching, dump all the bits to the target system and perform the attack
+  **Test** Prec@1 84.810 Prec@5 99.010 Loss 0.7310 Error@1 15.190
+  **Test** Prec@1 88.590 Prec@5 99.440 Loss 0.5661 Error@1 11.410
+Attacking which layer: 01
+Model Integrity Check Failed!, we found 1 bit-flips
+k_top is set to 40
+Attack sample size is 128
+**********************************
+Iteration: [001/002]   Attack Time 0.213 (0.213)  [2021-05-28 00:34:08]
+loss before attack: 0.0164
+loss after attack: 1.2408
+bit flips: 9
+iteration Time 0.000 (0.000)
+**********************************
+Iteration: [002/002]   Attack Time 0.213 (0.213)  [2021-05-28 00:34:08]
+loss before attack: 1.2408
+loss after attack: 7.2089
+bit flips: 10
+iteration Time 0.000 (0.000)
+End of searching, dump all the bits to the target system and perform the attack
+  **Test** Prec@1 63.450 Prec@5 93.570 Loss 3.5769 Error@1 36.550
+  **Test** Prec@1 89.090 Prec@5 99.540 Loss 0.5343 Error@1 10.910
+Attacking which layer: 01
+Model Integrity Check Failed!, we found 1 bit-flips
+k_top is set to 40
+Attack sample size is 128
+**********************************
+Iteration: [001/002]   Attack Time 0.214 (0.214)  [2021-05-28 00:34:17]
+loss before attack: 0.0137
+loss after attack: 0.2167
+bit flips: 11
+iteration Time 0.000 (0.000)
+**********************************
+Iteration: [002/002]   Attack Time 0.217 (0.215)  [2021-05-28 00:34:17]
+loss before attack: 0.2167
+loss after attack: 0.4570
+bit flips: 12
+iteration Time 0.000 (0.000)
+End of searching, dump all the bits to the target system and perform the attack
+  **Test** Prec@1 84.610 Prec@5 99.120 Loss 0.7985 Error@1 15.390
+  **Test** Prec@1 88.670 Prec@5 99.420 Loss 0.5866 Error@1 11.330
+Attacking which layer: 01
+Model Integrity Check Failed!, we found 1 bit-flips
+k_top is set to 40
+Attack sample size is 128
+**********************************
+Iteration: [001/002]   Attack Time 0.217 (0.217)  [2021-05-28 00:34:26]
+loss before attack: 0.0104
+loss after attack: 0.0756
+bit flips: 13
+iteration Time 0.000 (0.000)
+**********************************
+Iteration: [002/002]   Attack Time 0.219 (0.218)  [2021-05-28 00:34:26]
+loss before attack: 0.0756
+loss after attack: 0.2836
+bit flips: 14
+iteration Time 0.000 (0.000)
+End of searching, dump all the bits to the target system and perform the attack
+  **Test** Prec@1 87.110 Prec@5 99.310 Loss 0.6438 Error@1 12.890
+  **Test** Prec@1 89.320 Prec@5 99.560 Loss 0.5289 Error@1 10.680
+Attacking which layer: 01
+Model Integrity Check Failed!, we found 1 bit-flips
+k_top is set to 40
+Attack sample size is 128
+**********************************
+Iteration: [001/002]   Attack Time 0.293 (0.293)  [2021-05-28 00:34:35]
+loss before attack: 0.0277
+loss after attack: 0.1411
+bit flips: 15
+iteration Time 0.000 (0.000)
+**********************************
+Iteration: [002/002]   Attack Time 0.187 (0.240)  [2021-05-28 00:34:35]
+loss before attack: 0.1411
+loss after attack: 0.7828
+bit flips: 16
+iteration Time 0.000 (0.000)
+End of searching, dump all the bits to the target system and perform the attack
+  **Test** Prec@1 84.110 Prec@5 98.720 Loss 0.8255 Error@1 15.890
+  **Test** Prec@1 90.040 Prec@5 99.640 Loss 0.4979 Error@1 9.960
+Attacking which layer: 06
+Model Integrity Check Failed!, we found 1 bit-flips
+k_top is set to 40
+Attack sample size is 128
+**********************************
+Iteration: [001/002]   Attack Time 0.239 (0.239)  [2021-05-28 00:34:43]
+loss before attack: 0.0186
+loss after attack: 0.7094
+bit flips: 17
+iteration Time 0.000 (0.000)
+**********************************
+Iteration: [002/002]   Attack Time 0.206 (0.222)  [2021-05-28 00:34:44]
+loss before attack: 0.7094
+loss after attack: 3.5184
+bit flips: 18
+iteration Time 0.000 (0.000)
+End of searching, dump all the bits to the target system and perform the attack
+  **Test** Prec@1 66.690 Prec@5 94.390 Loss 3.2488 Error@1 33.310
+  **Test** Prec@1 89.290 Prec@5 99.530 Loss 0.5276 Error@1 10.710
+Attacking which layer: 01
+Model Integrity Check Failed!, we found 1 bit-flips
+k_top is set to 40
+Attack sample size is 128
+**********************************
+Iteration: [001/002]   Attack Time 0.215 (0.215)  [2021-05-28 00:34:52]
+loss before attack: 0.0091
+loss after attack: 0.9573
+bit flips: 19
+iteration Time 0.000 (0.000)
+**********************************
+Iteration: [002/002]   Attack Time 0.191 (0.203)  [2021-05-28 00:34:52]
+loss before attack: 0.9573
+loss after attack: 3.1180
+bit flips: 20
+iteration Time 0.000 (0.000)
+End of searching, dump all the bits to the target system and perform the attack
+  **Test** Prec@1 66.890 Prec@5 94.550 Loss 3.2548 Error@1 33.110
+  **Test** Prec@1 89.800 Prec@5 99.590 Loss 0.4960 Error@1 10.200
+Attacking which layer: 01
+Model Integrity Check Failed!, we found 1 bit-flips
+=> Average detected bit-flips - mean: 1.00, std: 0.0000
+=> Average Attacked Accuracy is 77.34%
+=> Average Recovered Accuracy is 88.85%
+Massive Test on data integrity Finished!
