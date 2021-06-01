@@ -37,7 +37,7 @@ If you find this project useful to you, please cite [our work](https://arxiv.org
 * config (pip install config)
   
 ## Usage
-Download pretrained quantized CIFAR-10 ResNet-20 model and ImageNet ResNet-18 model from:
+Download pretrained quantized ImageNet ResNet-18 model from:
 * [Google Drive](https://drive.google.com/drive/folders/15r5d8B9HPM0dGZQrSg6j2UT5fRy25DSM?usp=sharing ) (email me directly if link is not available)
 
 To perform run-time checking using the pretrained model, please use the following command in terminal. For Imagenet, remember to revise the bash code with correct dataset path.
